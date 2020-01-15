@@ -7,6 +7,119 @@
 	<title>Document</title>
 </head>
 <body>
-	
+	<header class="main-header container">
+		<span class="main-logo">DEVICE</span>
+		<nav class="user-nav">
+			<form class="search" action="google.ru" method="get">
+				<input type="search" name="search" placeholder="Поиск по сайту">
+				<input type="submit" value="Найти">
+			</form>
+			<ul class="user-menu">
+				<li class="user-login"><a href="#">Войти</a></li>
+				<li class="user-logged-in">
+					<ul>
+						<li class="username"><a href="#">Ганьшин Дмитрий</a></li>
+						<li class="logout"><a href="#">Выйти</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Сравнить</a></li>
+				<li><a href="#">Корзина</a></li>
+			</ul>
+		</nav>
+		<nav class="main-nav">
+			<ul class="site-navigation">
+				<li>каталог товаров
+					<nav class="goods-navigation">
+						<ul class="goods-navigation__column">
+							<li><a href="#">Виртуальная реальность</a></li>
+							<li><a href="#">Моноподы для селфи</a></li>
+							<li><a href="#">Экшн-камеры</a></li>							
+						</ul>
+						<ul class="goods-navigation__column">
+							<li><a href="#">Фитнес-браслеты</a></li>
+							<li><a href="#">Умные часы</a></li>							
+						</ul>
+						<ul class="goods-navigation__column">
+							<li><a href="#">Квадрокоптеры</a></li>
+						</ul>
+					</nav>
+				</li>
+				<li><a href="#">доставка</a></li>
+				<li><a href="#">гарантия</a></li>
+				<li><a href="#">контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<main>
+		<div class="container">
+			<section class="breadcrumbs">
+				<h1>Моноподы для селфи</h1>
+				<ul>
+					<li class="breadcrumbs-item"><a href="#">Главная</a></li>
+					<li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
+					<li class="breadcrumbs-item"><span>Моноподы для селфи</span></li>
+				</ul>
+			</section>
+		</div>	
+		
+		<div class="gray-font-container">			
+				<span class="filter-header-container">фильтр:</span>
+				<section class="sort-list">
+					<h2>сортировка:</h2>
+					<ul>
+						<li class="sort-list-item"><a href="#">По цене</a></li>
+						<li class="sort-list-item"><a href="#">По типу</a></li>
+						<li class="sort-list-item"><a href="#">По популярности</a></li>
+						<li class="sort-list-item visually-hiden"><a href="#"></a></li>
+						<li class="sort-list-item visually-hiden" ><a href="#"></a></li>
+					</ul>
+				</section>			
+		</div>
+
+		<div class="filter-container">
+			<section class="filter">
+				<h2 class="visually-hidden">фильтр</h2>
+				<!-- добавить сюда форму для фильтров -->
+			</section>
+		</div>
+
+		<div class="shop-container">
+			<section class="shop">
+				<h2 class="visually-hidden">Селфи-палки</h2>
+				<ul>
+					<li class="product-card">
+						<img src="img/content/item-1.jpg" alt="Любительская селфи-палка">
+						<a href=""><h3>Любительская селфи-палка</h3></a>
+						<span>500 руб.</span>
+					</li>
+					<li class="product-card">
+						<img src="img/content/item-1.jpg" alt="Профессиональная селфи-палка ">
+						<a href=""><h3>Профессиональная селфи-палка </h3></a>
+						<span>1500 руб.</span>
+					</li>
+					<li class="product-card">
+						<img src="img/content/item-1.jpg" alt="Непотопляемая селфи-палка">
+						<a href=""><h3>Непотопляемая селфи-палка</h3></a>
+						<span>2500 руб.</span>
+					</li>
+					<li class="product-card">
+						<img src="img/content/item-1.jpg" alt="Селфи-палка «Следуй за мной»">
+						<a href=""><h3>Селфи-палка «Следуй за мной»</h3></a>
+						<span>4900 руб.</span>
+					</li>
+				</ul>
+			</section>
+
+			<div class="pagination-list">
+				
+			</div>
+		</div>
+
+
+	</main>
+
+
 </body>
 </html>
