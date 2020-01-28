@@ -11,8 +11,9 @@
 		<span class="main-logo">DEVICE</span>
 		<nav class="user-nav">
 			<form class="search" action="google.ru" method="get">
-				<input type="search" name="search" placeholder="Поиск по сайту">
-				<input type="submit" value="Найти">
+				<input type="search" name="search" id="search_input" placeholder="Поиск по сайту">
+				<label for="search_input" class="visually-hidden">Поиск по сайту</label>
+				<button class="button" type="submit">Найти</button>
 			</form>
 			<ul class="user-menu">
 				<li class="user-login"><a href="#">Войти</a></li>
@@ -81,7 +82,54 @@
 		<div class="filter-container">
 			<section class="filter">
 				<h2 class="visually-hidden">фильтр</h2>
-				<!-- добавить сюда форму для фильтров -->
+				<!--  форма для фильтров -->
+
+				<form class="filter" action="#" method="POST">
+					<fieldset class="filter-field filter-field-first">
+						<legend class="filter-legend">Стоимость</legend>
+
+						<button class="filter-button" name="filter-button" id="filter-button" type="button"></button>
+						<label for="filter-button">от 0</label>
+						<label for="filter-button">до 5000</label>
+
+					</fieldset>
+
+					<fieldset class="filter-field filter-field-second">						
+						<legend class="filter-legend">Цвет</legend>
+
+						<input class="visually-hidden" id="filter-color-black" type="checkbox" name="color" value="black" checked>
+						<label for="filter-color-black">Черный</label>
+
+						<input class="visually-hidden" id="filter-color-white" type="checkbox" name="color" value="white">
+						<label for="filter-color-white">Белый</label>
+
+						<input class="visually-hidden" id="filter-color-blue" type="checkbox" name="color" value="blue" checked>
+						<label for="filter-color-blue">синий</label>
+
+						<input class="visually-hidden" id="filter-color-red" type="checkbox" name="color" value="red" checked>
+						<label for="filter-color-red">Красный</label>
+
+						<input class="visually-hidden" id="filter-color-pink" type="checkbox" name="color" value="pink">
+						<label for="filter-color-pink">Розовый</label>	
+
+					</fieldset>
+
+					<fieldset class="filter-field filter-field-last">
+						<legend class="filter-legend">Bluetooth</legend>
+
+						<input class="visually-hidden filter-bluetooth" id="filter-bluetooth-enable" name="filter-bluetooth" value="enable" type="radio" checked>
+						<label for="filter-bluetooth-enable">Есть</label>	
+
+						<input class="visually-hidden filter-bluetooth" id="filter-bluetooth-disable" name="filter-bluetooth" value="disable" type="radio">
+						<label for="filter-bluetooth-disable">Нет</label>
+
+					</fieldset>
+					
+					<button type="submit" class="button filter-button-submit">показать</button>
+
+
+				</form>
+
 			</section>
 		</div>
 

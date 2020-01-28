@@ -12,8 +12,9 @@
 		<span class="main-logo">DEVICE</span>
 		<nav class="user-nav">
 			<form class="search" action="google.ru" method="get">
-				<input type="search" name="search" placeholder="Поиск по сайту">
-				<input type="submit" value="Найти">
+				<input type="search" name="search" id="search_input" placeholder="Поиск по сайту">
+				<label for="search_input" class="visually-hidden">Поиск по сайту</label>
+				<button class="button" type="submit">Найти</button>
 			</form>
 			<ul class="user-menu">
 				<li class="user-login"><a href="#">Войти</a></li>
@@ -233,8 +234,32 @@
 				<button class="btn about-us__butn">
 					напишите нам
 				</button>
-				<form class="writ-us" action="">
-					<!-- тут будет форма обратной связи -->
+
+				<!-- popup - форма обратной связи -->
+				<form class="write-us hidden" action="#" method="POST">					
+					<fieldset>
+						<legend >Форма обратной связи</legend>
+						<button type="button" class="write-us-close-button button">
+							<span class="visually-hidden">Закрыть</span>
+						</button>
+						<div class="write-us-part write-us-top-part">
+							<div class="write-us-name">
+								<label for="write-us-username">Ваше имя:</label>
+								<input type="text" name="write-us-username"  id="write-us-username" placeholder="Имя Фамилия">
+							</div>
+							<div class="write-us-email">
+								<label for="write-us-email">Ваш e-mail:</label>
+								<input type="text" name="write-us-email"  id="write-us-email" placeholder="email@example.ru">
+							</div>
+						</div>
+						<div class="write-us-part write-us-bottom-part">
+							<label for="write-us-message">Текст письма:</label>
+							<textarea name="write-us-message" id="write-us-message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
+						</div>
+						<button type="submit" class="button">отправить</button>
+
+					</fieldset>
+
 				</form>
 				
 
