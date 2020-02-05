@@ -1,3 +1,11 @@
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Gilroy";
+
+  src: url(../fonts/gilroyextrabold.woff2) format("woff2");
+}
+
 .visually-hidden {
   position: absolute;
 
