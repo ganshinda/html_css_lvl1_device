@@ -82,18 +82,24 @@ a {
   background-color: #f7e296;
 }
 .btn {
+  font-weight: 900;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   text-align: center;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+
+  background-color: #f0c52e;
+  border: none;
 }
 
 /* ------------------------- header ------------------------- */
 
 .main-logo {
-  font-size: 48px;
+	font-size: 48px;
+	font-weight: 900;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   color: black;
 }
@@ -102,13 +108,10 @@ a {
 main a {
   color: black;
 }
-.main-footer a {
-  color: white;
-}
 .site-navigation li {
   font-weight: 900;
   font-size: 18px;
-  font-family: "Gilroy" Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 .goods-navigation li {
@@ -125,14 +128,82 @@ main a {
   font-weight: 900;
   font-size: 47px  ;
   line-height: 56px;
-  font-family: "Gilroy" Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+}
+.slider .slider-table tr:nth-child(1) {
+  font-weight: 300;
+  font-size: 36px  ;
+  line-height: 48px;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+}
+.slider .slider-table tr:nth-child(2) {
+  font-size: 13px;
+  line-height: 20px;
+}
+/* --------------- device types --------------- */
+.device-types p {
+  font-weight: 900;
+  font-size: 18px  ;
+  line-height: 24px;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+}
+/* --------------- advantages --------------- */
+.background {
+  background-color: #e5e5e5;
+}
+.advantages-container h3,
+.about-us h2,
+.contacts h2 {
+  font-weight: 900;
+  font-size: 47px  ;
+  line-height: 48px;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+}
+.advantages-container p {
+  color: #464646;
+}
+.about-us p,
+.contacts p {
+  color: #464646;
+  letter-spacing: normal;
+}
+.about-us__companies li {
+  font-weight: 900;
+  font-size: 16px  ;
+  line-height: 40px;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  letter-spacing: normal;
 }
 
-
-
 /* ------------------------- footer ------------------------- */
-
-
-
+.main-footer,
+.main-footer a {
+  color: white;
+}
+.main-footer .container {
+  background-color: #464646;
+}
+.main-footer .main-logo {
+	color: #ffc600;
+}
+.main-footer .user-menu {
+	line-height: 36px;
+}
+.main-footer .adress-nav-phone p{
+	line-height: 30px;
+	letter-spacing: normal;
+}
+.main-footer .main-nav a{
+	font-weight: 900;
+  font-size: 18px  ;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	text-align: center;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+}
+.main-footer .socials a{
+	font-size: 0px;
+}
 
 
