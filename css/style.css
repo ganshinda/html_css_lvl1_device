@@ -92,14 +92,16 @@ a {
   letter-spacing: 0.2em;
 
   background-color: #f0c52e;
+
+/* background-color: inherit; */
   border: none;
 }
-
+/* ============================== INDEX HTML ============================== */
 /* ------------------------- header ------------------------- */
 
 .main-logo {
-	font-size: 48px;
-	font-weight: 900;
+  font-weight: 900;
+  font-size: 48px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   color: black;
 }
@@ -184,26 +186,129 @@ main a {
   background-color: #464646;
 }
 .main-footer .main-logo {
-	color: #ffc600;
+  color: #ffc600;
 }
 .main-footer .user-menu {
-	line-height: 36px;
+  line-height: 36px;
 }
-.main-footer .adress-nav-phone p{
-	line-height: 30px;
-	letter-spacing: normal;
+.main-footer .adress-nav-phone p {
+  line-height: 30px;
+  letter-spacing: normal;
 }
-.main-footer .main-nav a{
-	font-weight: 900;
+.main-footer .main-nav a {
+  font-weight: 900;
   font-size: 18px  ;
-	line-height: 24px;
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-	text-align: center;
+  line-height: 24px;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.main-footer .socials a {
+  font-size: 0;
+}
+/* ------------------------- popup ------------------------- */
+.write-us label {
+  font-weight: 900;
+  font-size: 18px  ;
+  line-height: 24px;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  letter-spacing: normal;
+}
+.write-us input,
+.write-us textarea {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+/* ============================== Catalog.html ============================== */
+/* ------------------------- main ------------------------- */
+main h1 {
+  font-weight: 900;
+  font-size: 47px  ;
+  line-height: 48px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
 }
-.main-footer .socials a{
-	font-size: 0px;
+main .breadcrumbs li {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+
+  opacity: 0.3;
 }
+.gray-font-container {
+  font-weight: 900;
+  font-size: 16px  ;
+  line-height: 24px;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
 
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.gray-font-container h2 {
+  font-size: 16px  ;
+  line-height: 24px;
+}
+.gray-font-container span {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.gray-font-container li {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", Arial, sans-serif;
+  text-transform: none;
+	letter-spacing: normal;
+	opacity: 0.3;
+}
+.gray-font-container li:nth-child(1) {
 
+	opacity: 1;
+}
+/* --------------- filter form --------------- */
+.filter .filter-legend {
+	font-weight: 900;
+  font-size: 18px  ;
+  line-height: 24px;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.18px;
+}
+.filter .filter-button~label,
+.filter .filter-bluetooth~label {
+	font-size: 14px;
+	line-height: 40px;
+	letter-spacing: 0.14px;
+}
+.filter input[type="checkbox"]+label {
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: normal;
+}
+/* --------------- shop container --------------- */
+.shop-container .product-card h3 {
+	font-weight: 900;
+  font-size: 18px  ;
+  line-height: 24px;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.18px;
+}
+.shop-container .product-card span {
+	font-weight: 300;
+  font-size: 16px  ;
+  line-height: 24px;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+	letter-spacing: 0.16px;
+	color: #464646;
+}
+.paginator {
+	font-weight: 900;
+  font-size: 16px  ;
+  line-height: 24px;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+	letter-spacing: 0.91px;
+	text-transform: uppercase;
+}
+.paginator li:nth-child(n+2) {
+	opacity: 0.3;
+}
