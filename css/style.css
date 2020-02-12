@@ -51,10 +51,23 @@
 
   clip: rect(0 0 0 0);
 }
-
+/* --------- redefine the boxsizing properties --------- */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+.content-box-component {
+  box-sizing: content-box;
+}
+/* ----------------------------------------------------- */
 body {
   margin: 0;
   padding: 0;
+  padding-top: 40px;
 
   font-weight: 300;
   font-size: 15px;
@@ -66,6 +79,7 @@ body {
   background-color: #ffffff;
 }
 
+ul,
 li {
   margin: 0;
   padding: 0;
@@ -79,7 +93,11 @@ a {
 
 
 .main-header {
-  background-color: #f7e296;
+  position: relative;
+
+  padding-bottom: 51px;
+
+  background-color: rgba(240, 198, 46, 0.5);
 }
 .btn {
   font-weight: 900;
@@ -102,19 +120,23 @@ a {
 .main-logo {
   font-weight: 900;
   font-size: 48px;
+  line-height: 48px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   color: black;
+  letter-spacing: 0.26px;
 }
 
 .main-header a,
 main a {
   color: black;
 }
-.site-navigation li {
+.site-navigation > li {
   font-weight: 900;
   font-size: 18px;
+  line-height: 24px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
 .goods-navigation li {
   font-weight: 300;
@@ -126,11 +148,14 @@ main a {
 
 /* ------------------------- main ------------------------- */
 /* --------------- sliders --------------- */
-.slider .slide-content b {
+.slider .slide-content p:first-of-type {
+  margin: 0;
+
   font-weight: 900;
   font-size: 47px  ;
   line-height: 56px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.17px;
 }
 .slider .slider-table tr:nth-child(1) {
   font-weight: 300;
@@ -259,56 +284,213 @@ main .breadcrumbs li {
   line-height: 18px;
   font-family: "Open Sans", Arial, sans-serif;
   text-transform: none;
-	letter-spacing: normal;
-	opacity: 0.3;
+  letter-spacing: normal;
+
+  opacity: 0.3;
 }
 .gray-font-container li:nth-child(1) {
-
-	opacity: 1;
+  opacity: 1;
 }
 /* --------------- filter form --------------- */
 .filter .filter-legend {
-	font-weight: 900;
+  font-weight: 900;
   font-size: 18px  ;
   line-height: 24px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   letter-spacing: 0.18px;
 }
-.filter .filter-button~label,
-.filter .filter-bluetooth~label {
-	font-size: 14px;
-	line-height: 40px;
-	letter-spacing: 0.14px;
+.filter .filter-button ~ label,
+.filter .filter-bluetooth ~ label {
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.14px;
 }
-.filter input[type="checkbox"]+label {
-	font-size: 14px;
-	line-height: 24px;
-	letter-spacing: normal;
+.filter input[type="checkbox"] + label {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: normal;
 }
 /* --------------- shop container --------------- */
 .shop-container .product-card h3 {
-	font-weight: 900;
+  font-weight: 900;
   font-size: 18px  ;
   line-height: 24px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   letter-spacing: 0.18px;
 }
 .shop-container .product-card span {
-	font-weight: 300;
+  font-weight: 300;
   font-size: 16px  ;
   line-height: 24px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
-	letter-spacing: 0.16px;
-	color: #464646;
+  color: #464646;
+  letter-spacing: 0.16px;
 }
 .paginator {
-	font-weight: 900;
+  font-weight: 900;
   font-size: 16px  ;
   line-height: 24px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
-	letter-spacing: 0.91px;
-	text-transform: uppercase;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
 }
 .paginator li:nth-child(n+2) {
-	opacity: 0.3;
+  opacity: 0.3;
 }
+/* ============================== layout the site grid ============================== */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+.main-header.container {
+  padding-left: 60px;
+}
+.main-header .main-logo {
+  position: absolute;
+  top: -25px;
+  left: 57px;
+}
+.main-header .user-nav {
+  display: flex;
+  padding-top: 43px;
+}
+
+.main-header .main-nav {
+  display: flex;
+}
+.user-nav form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 440px;
+  margin-right: 100px;
+
+  /* outline: 1px solid red; */
+}
+.user-nav input {
+  flex-grow: 1;
+  padding-top: 6px;
+  padding-right: 10px;
+  padding-left: 38px;
+
+  background-color: transparent;
+  border: none;
+}
+.main-header .user-menu {
+  display: flex;
+  width: 500px;
+
+  /* outline: 1px solid red; */
+}
+.user-menu > li {
+  padding-left: 26px;
+}
+.user-menu > li:nth-child(1) {
+  margin-right: 211px;
+}
+.user-menu > li:nth-child(2) {
+  position: relative;
+
+  padding: 0;
+}
+.user-menu li:last-child {
+  margin-left: auto;
+}
+
+.user-menu ul {
+  position: absolute;
+  left: -254px ;
+
+  display: none;
+  justify-content: space-between;
+  width: 254px;
+
+  color: black;
+
+  /* background-color: red; */
+}
+
+.main-nav {
+  position: relative;
+}
+.main-nav .site-navigation {
+  display: flex;
+  flex-basis: 1044px;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+.site-navigation li:nth-child(n+2) {
+  margin-left: 34px;
+}
+.site-navigation li:nth-child(2) {
+  margin-left: auto;
+}
+.site-navigation li:last-child {
+  margin-left: 110px;
+}
+.main-nav .goods-navigation {
+  display: none;
+}
+.goods-navigation__background {
+  position: absolute;
+  top: 115px;
+  left: -60px;
+
+  width: 1160px;
+  height: 111px;
+
+  background-color: rgba(240, 198, 46, 0.5);
+  /* outline: 2px solid green; */
+}
+/* ------------------------- main ------------------------- */
+.slides {
+  position: relative;
+
+  display: flex;
+}
+.slides .slider {
+  display: none;
+  width: 100%;
+}
+.slides .slide-1--active {
+  display: flex;
+}
+
+.slider .promo-img {
+  display: flex;
+  width: 560px;
+
+  outline: 1px solid   red;
+}
+.slides .slide-content {
+  width: 480px;
+  margin-left: 40px;
+  padding-top: 80px;
+
+  outline: 1px solid   red;
+}
+.slides .slide-content span {
+  position: absolute;
+
+  display: none;
+}
+.slides .slides-buttons {
+  position: absolute;
+  right: 40px;
+  bottom: 100px;
+}
+
+.slides .promo-img img {
+  margin: auto;
+}
+
+
+
+
+/* .slides .slide-1 {
+  display: none;
+}
+.slides .slide-2 {
+  display: flex;
+} */
